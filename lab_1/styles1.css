@@ -1,0 +1,10 @@
+.indent{
+    text-indent: 50px;
+}
+.double_indent{
+    text-indent: 100px;
+}
+.total_indent{
+    width: 400px;
+    margin-left: 50px;
+}
