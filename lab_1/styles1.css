@@ -1,10 +1,30 @@
-.indent{
-    text-indent: 50px;
+@import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
+body {
+    margin: 0 auto;
+    max-width: 50em;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    line-height: 1.5;
+    padding: 4em 1em;
+    color: #555;
 }
-.double_indent{
-    text-indent: 100px;
+h1,h2,strong {
+  color: #333;
 }
-.total_indent{
-    width: 400px;
-    margin-left: 50px;
+h2 {
+  margin-top: 1em;
+  padding-top: 1em;
+}
+body header {
+    margin:0;
+    max-width: none;
+    background-image: url("winter.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    line-height: 1.2;
+    padding: 10vw 2em;
+    text-align: center;
+}
+a {
+  color: #e81c4f;
 }
