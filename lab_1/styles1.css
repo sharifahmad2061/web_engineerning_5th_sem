@@ -1,22 +1,37 @@
 @import 'https://fonts.googleapis.com/css?family=Roboto:300,400,500';
 body {
-    margin: 0 auto;
-    max-width: 50em;
+    margin: 0;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
     line-height: 1.5;
-    padding: 4em 1em;
+    padding: 0;
     color: #555;
+}
+main{
+    margin: 0 auto;
+    max-width: 50em;
+    padding: 4em 1em;
+}
+header h1 {
+  color: white;
+  font-size: 2.5em;
+  font-weight: 300;
+}
+header p {
+  border: 1px solid #e81c4f;
+  border-radius: 290486px;
+  color: white;
+  font-size: 0.6em;
+  letter-spacing: 0.2em;
+  padding: 1em 2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: none 200ms ease-out;
+  transition-property: color, background;
 }
 h1,h2,strong {
   color: #333;
 }
-h2 {
-  margin-top: 1em;
-  padding-top: 1em;
-}
-body header {
-    margin:0;
-    max-width: none;
+header {
     background-image: url("winter.jpg");
     background-position: center top;
     background-repeat: no-repeat;
