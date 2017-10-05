@@ -1,0 +1,35 @@
+ul{
+    display: flex;
+    justify-content: space-between;
+    width:500px;
+    margin:0 auto;
+    background-color: #55D6BE;
+    border-radius: 5px;
+}
+li{
+    list-style-type: none;
+    display: inline-block;
+    font-size: 24px;
+    color:#A02468;
+    height: 50px;
+}
+li:hover{
+    background-color: #A5C6FF;
+}
+div
+{
+    display: none;
+    height: 200px;
+    background-color:#FFDCB7;
+    color:#FF87B3;
+    
+}
+#hobby:hover > div,#int:hover > div{
+    display:block;
+}
+p:hover{
+    background-color: #A02468;
+}
+/* #int:hover > div{
+    display: block;
+} */

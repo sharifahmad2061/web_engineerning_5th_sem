@@ -1,0 +1,39 @@
+#car{
+    -webkit-animation-duration: 5s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-name: veh;
+    -webkit-animation-timing-function: ease-in;
+}
+#wheel1,#wheel2{
+    -webkit-animation-duration: 5s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-timing-function: ease-in;
+    -webkit-animation-name: tyre;
+}
+@keyframes tyre{
+    
+    100%{-webkit-transform:translateX(800px) rotate(360deg)};
+}
+@keyframes veh{
+    100%{-webkit-transform: translateX(800px)};
+}
+#car{
+    width:400px;
+    height:200px;
+}
+#wheel1{
+    position: absolute;
+    top:100px;
+    left:-10px;
+    width:180px;
+    height:120px;
+}
+#wheel2{
+    position: absolute;
+    top:100px;
+    left : 250px;
+    width:180px;
+    height:120px;
+}
