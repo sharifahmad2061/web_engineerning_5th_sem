@@ -1,37 +1,42 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
 body{
     margin:0;
+    color:white;
+    font-weight: bold;
+    font-family: 'Open-Sans', sans-serif;
 }
 #main-con{
-    background-color: #FF1654;
+    /* background-color: #FF1654; */
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-column-gap: 5px;
-    /* grid-row-gap: 5px; */
+    grid-column-gap: 10px;
+    grid-row-gap: 5px;
 }
 #sec-con{
     /* background-color: #0E1559; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
-    grid-gap: 5px 5px;
+    grid-gap: 5px 10px;
 }
 .col_1st{
-    background-color: aqua;
+    background-color: #247BA0;
     grid-column: 1/2;
     grid-row: 1/2;
 }
 .col_2nd{
     background-color:#0053C9;
-    width: 300px;
-    height: 300px;
 }
 .pad{
-    /* margin: 20px; */
     padding : 20px;
 }
 .shadow{
     border-radius: 5px;
-    border: 1px solid black;
-    box-shadow: 4px 4px 4px #F3FFBD;
+    /* border: 1px solid black; */
+    /* box-shadow: 4px 4px 4px grey; */
+}
+p{
+    width:400px;
+    height:400px;
 }
