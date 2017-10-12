@@ -4,14 +4,14 @@ body{
 #main-con{
     background-color: #d4d4d4;
     display:grid;
-    grid-template-columns: 1fr,1fr;
-    grid-template-rows: 1fr,1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 #sec-con{
     background-color: blueviolet;
     display: grid;
-    grid-template-columns: 1fr,1fr;
-    grid-template-rows: 1fr,1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
 }
 .col_1st{
     background-color: aqua;
