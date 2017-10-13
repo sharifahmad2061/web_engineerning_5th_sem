@@ -8,7 +8,6 @@ body{
 #nav{
     display:grid;
     grid-template-columns:2fr 1fr 1fr 1fr 1fr 2fr;
-    /* padding:10px; */
 }
 #fst{
     grid-column: 2/3;
@@ -20,7 +19,6 @@ a{
     padding:10px;
 }
 #main-con{
-    /* background-color: #FF1654; */
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -28,7 +26,6 @@ a{
     grid-row-gap: 5px;
 }
 #sec-con{
-    /* background-color: #0E1559; */
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -45,33 +42,18 @@ a{
 .pad{
     padding : 20px;
 }
-.shadow{
-    border-radius: 5px;
-    /* border: 1px solid black; */
-    /* box-shadow: 4px 4px 4px grey; */
-}
 p{
     width:400px;
     height:400px;
 }
 @media screen and (max-width:1500px){
     #main-con{
-        /* background-color: #FF1654; */
-        /* display:grid; */
         grid-template-columns: 1fr;
-        /* grid-template-rows: 1fr 1fr; */
-        /* grid-column-gap: 10px; */
-        /* grid-row-gap: 5px; */
     }
 }
 @media screen and (max-width:900px){
     #nav{
-        /* background-color: #FF1654; */
-        /* display:grid; */
         grid-template-columns:1fr 1fr 1fr 1fr;
-        /* grid-template-rows: 1fr 1fr; */
-        /* grid-column-gap: 10px; */
-        /* grid-row-gap: 5px; */
     }
     #fst{
         grid-column: 1/2;
