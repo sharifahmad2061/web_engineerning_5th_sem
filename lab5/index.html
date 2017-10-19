@@ -5,15 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>calculator</title>
-    <script src="script.js"></script>
+    <style>
+        body{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 250px 250px 250px;
+        }
+        div{
+            grid-column: 2/3;
+            grid-row: 2/3;
+            box-shadow: 0 0 5px skyblue;
+        }
+        input{
+            margin: 5px;
+        }
+    </style>
 </head>
 <body>
-    <input type="number" name="" id="src">
-    <input type="number" name="" id="result">
-    <select name="" id="checkbox">
-        <option value="GB">pounds</option>
-        <option value="EURO">euros</option>
-        <option value="USD">us dollars</option>
-    </select>
+    <div>
+            <input type="number" id="src" oninput="change()"><br>
+            <input type="number" name="" id="result">
+            <select name="" id="checkbox" onchange="sel()">
+                <option value="GB" selected="selected">pounds</option>
+                <option value="EURO">euros</option>
+                <option value="USDOLLAR">us dollars</option>
+            </select>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
