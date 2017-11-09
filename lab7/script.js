@@ -34,7 +34,7 @@ data = {
 }
 var out = document.getElementById("out");
 var box = document.getElementById("search_box");
-box.addEventListener("input",search);
+box.addEventListener("keyup",search);
 
 function search() {
 
@@ -42,48 +42,26 @@ function search() {
     out.innerHTML = res;
 
     var temp = box.value;
-    var pat = new RegExp(temp);
+    if (temp == "")return;
+
+    var pat = new RegExp(temp, "i");
     
-    var res1 = -1, res2 = -1, res3 = -1;
-    var res1 = data.HOD.search(temp);
-    console.log(res1);
-    console.log("second loop");
+    var res1 = false;
+    
+    var res1 = pat.test(data.HOD);
+    if (res1 == true){res += data.HOD; res += "<br>";}
+    res1 = false;
+
     for (var index= 0; index < (data.Faculty.length); ++index){
-        res2 = data.Faculty[index].search(temp);
-        console.log(index,res2);
-        if (res2 > -1){break;}
+        res1 = pat.test(data.Faculty[index]);
+        if (res1 == true){res += data.Faculty[index];res += "<br>";}
+        res1 = false;
     }
-    console.log("third loop");
     
     for (var index= 0; index < (data.Lab_Eng.length); ++index){
-        res3 = data.Lab_Eng[index].search(temp);
-        console.log(index,res3);
-        if (res3 > -1){break;}
-    }
-    if (res1 == -1 && res2 == -1 && res3 ==-1){out.innerHTML = "No match found";}
-    else{
-        if (res1 > -1){
-            if (pat.exec(data.HOD) != null){
-                res += data.HOD;
-                res += "<br>";
-            }
-        }
-        if (res2 > -1){
-            for (var index= 0; index < data.Faculty.length; ++index){
-                if(pat.exec(data.Faculty[index]) != null){
-                    res += data.Faculty[index];
-                    res += "<br>";                        
-                }
-            }
-        }
-        if (res3 > -1){
-            for (var index= 0; index < data.Lab_Eng.length; ++index){
-                if(pat.exec(data.Lab_Eng[index]) != null){
-                    res += data.Lab_Eng[index];
-                    res += "<br>";                        
-                }
-            }
-        }
+        res1 = pat.test(data.Lab_Eng[index]);
+        if (res1 == true){res += data.Lab_Eng[index];res += "<br>";}
+        res1 = false;
     }
     out.innerHTML = res;
 }
