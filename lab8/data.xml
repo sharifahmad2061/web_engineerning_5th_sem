@@ -1,0 +1,35 @@
+<friends>
+	<friend1>
+		<name>
+			<fn>faisal</fn>
+			<ln>khan</ln>
+		</name>
+		<location>
+			<latitude>34.000162</latitude>
+			<longitude>71.475978</longitude>
+		</location>
+		<gender>male</gender>
+	</friend1>
+	<friend2>
+		<name>
+			<fn>mazhar</fn>
+			<ln>ali</ln>
+		</name>
+		<location>
+			<latitude>34.1512083</latitude>
+			<longitude>71.7569084</longitude>
+		</location>
+		<gender>male</gender>
+	</friend2>
+	<friend3>
+		<name>
+			<fn>suleman</fn>
+			<ln>khan</ln>
+		</name>
+		<location>
+			<latitude>33.978701</latitude>
+			<longitude>71.442926</longitude>
+		</location>
+		<gender>male</gender>
+	</friend3>
+</friends>
