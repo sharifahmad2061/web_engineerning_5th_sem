@@ -37,7 +37,6 @@ var box = document.getElementById("search_box");
 box.addEventListener("keyup",search);
 
 function search() {
-
     var res = "";
     out.innerHTML = res;
 
