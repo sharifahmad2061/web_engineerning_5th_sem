@@ -4,9 +4,9 @@ body{
     align-items: center;
     flex-flow: column;
 }
-p{
+/* p{
     font-size : 2em;
-}
+} */
 #chk1,#chk2{
     display: grid;
     grid-template-columns: 20px 100px;
@@ -14,7 +14,14 @@ p{
 section#cards{
     display: grid;
     grid-template-columns : repeat(3, 300px);
-    grid-template-rows : 1fr 1fr 1fr;
+    grid-template-rows : repeat(3, 300px);
+}
+div{
+    display: flex;
+}
+img{
+    max-width: 100%;
+    height: auto;
 }
 /* #first{
     grid-row: 1/2;
