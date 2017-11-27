@@ -3,22 +3,22 @@ $(document).ready(function(){
     $("#Isd").change(function(){
         $("#cards > div").show();
         if($(this).prop("checked") == true){
-            $(" img[name |= 'Lahore'] ").hide();
+            $(" img[name |= 'Lahore'] ").toggle("slow");
         }else{
-            $(" img[name |= 'Lahore'] ").show();
+            $(" img[name |= 'Lahore'] ").toggle("slow");
         }
     });
     
     $("#Lhr").change(function(){
         $("#cards > div").show();
         if($(this).prop("checked") == true){
-            $(" img[name |= 'Islamabad'] ").hide();
+            $(" img[name |= 'Islamabad'] ").toggle("slow");
         }else{
-            $(" img[name |= 'Islamabad'] ").show();
+            $(" img[name |= 'Islamabad'] ").toggle("slow");
         }
     });
       
-    $("div").click(function(){
+    $("#cards > div").click(function(){
         $(this).toggle("slow");
     });
     
