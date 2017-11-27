@@ -1,21 +1,25 @@
 body{
-    display: grid;
+    display: flex;
     margin: 0;
-    /* border-left: 1px solid blueviolet; */
-    /* border-right: 1px solid blueviolet; */
-    /* width: 800px; */
-    /* padding: 0px 5px; */
-    grid-template-columns: 1fr 800px 1fr;
-    grid-template-rows: 10px 800px;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: #BE93C5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #7BC6CC, #BE93C5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #7BC6CC, #BE93C5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    
 }
 #cont{
-    grid-column: 2/3;
-    grid-row: 2;
     border-radius: 5px;
-    width: 800px;
-    box-shadow: 0px 0px 5px #aaaaaa;
+    /* box-shadow: 0px 0px 5px #aaaaaa; */
+    background-color: rgba(0, 0, 0, 0.1);
 }
 #map {
     height: 400px;
     width: 800px;
+}
+h3, p{
+    margin: 0;
+    font-size: 25px;
+    /* color: steelblue; */
 }
