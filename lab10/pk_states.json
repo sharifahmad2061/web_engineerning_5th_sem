@@ -1,8 +1,8 @@
-{
-    "KPK": "Khyber Paktunkhwa",
-    "PJB": "Punjab",
-    "SND": "Sindh",
-    "BL": "Balochistan",
-    "GB": "Gilgit Baltistan",
-    "KSH": "Azad Kashmir"
-}
+[
+    "Khyber Paktunkhwa",
+    "Punjab",
+    "Sindh",
+    "Balochistan",
+    "Gilgit Baltistan",
+    "Azad Kashmir"
+]
