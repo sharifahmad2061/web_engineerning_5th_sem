@@ -7,18 +7,18 @@
     <title>nav menu</title>
 
     <link rel="stylesheet" href="task2.css">
-    <script src="app.js"></script>
+    <!-- <script src="app.js"></script> -->
     <script src="angular.min.js"></script>
 </head>
-<body>
-    <section>
+<body ng-app="">
+    <section ng-init='item_sel = "home"'>
         <ul>
-            <li>HOME</li>
-            <li>PROJECTS</li>
-            <li>SERVICES</li>
-            <li>CONTACT</li>
+            <li ng-click='item_sel = "home"'>HOME</li>
+            <li ng-click='item_sel = "projects"'>PROJECTS</li>
+            <li ng-click='item_sel = "services"'>SERVICES</li>
+            <li ng-click='item_sel = "contact"'>CONTACT</li>
         </ul>
-        <p> you chose </p>            
+        <p>👨‍🏫 You Chose <span>{{item_sel}}</span></p>            
     </section>
 </body>
 </html>
